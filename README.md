@@ -27,10 +27,6 @@ A number of node.js tools is necessary to initialize and test the project. You m
 
 The project uses MongoDB as a database. If you are on Mac and using Homebrew package manager the installation is as simple as `brew install mongodb`.
 
-#### Apidoc
-
-To install run `npm install apidoc -g`.
-
 ### Start the MongoDB server
 
 First we need to create the `db` directory where the database files will live in. In your terminal navigate to the `root` of your system by doing `cd ..` until you reach the top directory. You can create the directory by running `sudo mkdir -p /data/db`. Now open a different tab in your terminal and run `mongod` to start the Mongo server.
@@ -48,9 +44,3 @@ After connecting with MongoDB you need to install nodemon:
 To run the server and BE connection run:
 
     nodemon index.js
-
-### Generate API documentation
-
-    npm run doc
-
-The command will generate a /doc folder that will contain an index.html file. Open it in any browser. The file contains information about API routes.
